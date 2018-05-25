@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "902235439863",
+    "firebase_url": "https://rugged-weaver-205216.firebaseio.com",
+    "project_id": "rugged-weaver-205216",
+    "storage_bucket": "rugged-weaver-205216.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902235439863:android:596d156f22383819",
+        "android_client_info": {
+          "package_name": "duc.googlebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902235439863-6p6pfmckbh1atcgjs8h7hjvn94p248ao.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "902235439863-0uatmh7pbjr0lrf2hl14jh7hhf1ng9ee.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "902235439863-icq4ffou3chijn1sn89ro8e65016b534.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "duc.googlebook",
+            "certificate_hash": "8e6ddd8c0e7b77edcbc48d11eddf01c7561acf12"
+          }
+        },
+        {
+          "client_id": "902235439863-6p6pfmckbh1atcgjs8h7hjvn94p248ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3-D-jINKtjbxNoinnxBTfSBUPfvkOJHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902235439863-6p6pfmckbh1atcgjs8h7hjvn94p248ao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

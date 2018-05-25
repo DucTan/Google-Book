@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Google Book</string>
+    <string name="facebook_app_id">191105928189673</string>
+    <string name="fb_login_protocol_scheme">fb191105928189673</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="or">Or</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="username">Username</string>
+    <string name="book_title">Book Title</string>
+    <string name="author">Author</string>
+    <string name="descriptions">Descriptions</string>
+    <string name="user_name">User name</string>
+    <string name="email">Email</string>
+    <string name="list_book">List Book</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="favorite">Favorite</string>
+    <string name="log_out">Log Out</string>
+    <string name="other">Other</string>
+    <string name="refesh">Refesh</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_books">My books</string>
+    <string name="src">Src</string>
+    <string name="title">Title</string>
+</resources>

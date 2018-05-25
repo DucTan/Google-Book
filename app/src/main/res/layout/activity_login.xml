@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="duc.googlebook.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/sliderdots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="195dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/rel1"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="11">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+
+            android:text="@string/dang_nhap"
+            android:textColor="#000"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/edt_us"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/edt_design"
+            android:hint="@string/username"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/edt_design"
+            android:hint="@string/password"
+            android:paddingStart="10dp"
+            android:password="true"
+            tools:ignore="Deprecated,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_login_design"
+            android:text="@string/log_in" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/or"
+            android:textColor="#000"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ln1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:paddingBottom="5dp"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            facebook:com_facebook_login_text="Facebook"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="2"
+            app:buttonSize="wide" />
+
+    </LinearLayout>
+
+</RelativeLayout>
