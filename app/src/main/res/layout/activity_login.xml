@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:weightSum="20"
     tools:context="duc.googlebook.LoginActivity">
 
     <RelativeLayout
         android:id="@+id/rel1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="8"
         android:padding="2dp">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="210dp">
+            android:layout_height="match_parent">
 
         </android.support.v4.view.ViewPager>
 
@@ -25,7 +28,7 @@
             android:id="@+id/sliderdots"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="195dp"
+            android:layout_marginTop="220dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -36,11 +39,10 @@
     <LinearLayout
         android:id="@+id/ln1"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_below="@id/rel1"
-        android:layout_centerInParent="true"
+        android:layout_height="0dp"
+        android:layout_weight="8"
         android:orientation="vertical"
-        android:padding="15dp"
+        android:padding="10dp"
         android:weightSum="11">
 
         <TextView
@@ -48,10 +50,10 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:gravity="center"
-
             android:text="@string/dang_nhap"
             android:textColor="#000"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+            tools:ignore="NestedWeights" />
 
         <EditText
             android:id="@+id/edt_us"
@@ -82,6 +84,7 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_gravity="center"
             android:layout_weight="2"
             android:background="@drawable/btn_login_design"
             android:text="@string/log_in" />
@@ -100,32 +103,37 @@
 
     <LinearLayout
         android:id="@+id/ln2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ln1"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
         android:weightSum="4">
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="2"
-            android:paddingBottom="5dp"
-            android:paddingStart="30dp"
-            android:paddingTop="5dp"
-            facebook:com_facebook_login_text="Facebook"
-            tools:ignore="RtlSymmetry" />
+            android:paddingBottom="11dp"
+            android:paddingLeft="11dp"
+            android:paddingTop="11dp"
+            facebook:com_facebook_login_text="Login with Facebook"
+            tools:ignore="NestedWeights,RtlHardcoded,RtlSymmetry" />
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
-            android:layout_width="0dp"
-            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="2"
-            app:buttonSize="wide" />
+            app:buttonSize="wide"
+            app:colorScheme="light" />
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

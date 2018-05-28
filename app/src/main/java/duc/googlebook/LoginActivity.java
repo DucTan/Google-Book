@@ -39,7 +39,6 @@ import java.util.TimerTask;
 
 import duc.googlebook.viewpager.ViewPagerAdapter;
 
-
 public class LoginActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
