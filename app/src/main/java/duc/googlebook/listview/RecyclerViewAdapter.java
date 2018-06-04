@@ -13,15 +13,15 @@ import java.util.ArrayList;
 
 import com.squareup.picasso.Picasso;
 
-import duc.googlebook.BookActivity;
+import duc.googlebook.activity.bookinfo.BookActivity;
 import duc.googlebook.R;
 import duc.googlebook.model.Book;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
-    private Context mContext;
+    private final Context mContext;
 
-    private ArrayList<Book> mListData;
+    private final ArrayList<Book> mListData;
 
     public RecyclerViewAdapter(Context mContext, ArrayList<Book> mListData) {
         this.mContext = mContext;

@@ -1,29 +1,33 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Google Book</string>
     <string name="facebook_app_id">191105928189673</string>
     <string name="fb_login_protocol_scheme">fb191105928189673</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="log_in">Log in</string>
-    <string name="password">Password</string>
-    <string name="or">Or</string>
-    <string name="dang_nhap">Đăng nhập</string>
-    <string name="username">Username</string>
+    <string name="log_in" tools:keep="@string/log_in">Log in</string>
+    <string name="password" tools:keep="@string/password">Password</string>
+    <string name="or" tools:keep="@string/or">Or</string>
+    <string name="dang_nhap" tools:keep="@string/dang_nhap">Đăng nhập</string>
+    <string name="username" tools:keep="@string/username">Username</string>
     <string name="book_title">Book Title</string>
     <string name="author">Author</string>
     <string name="descriptions">Descriptions</string>
-    <string name="user_name">User name</string>
-    <string name="email">Email</string>
-    <string name="list_book">List Book</string>
-    <string name="bookmark">Bookmark</string>
-    <string name="favorite">Favorite</string>
-    <string name="log_out">Log Out</string>
-    <string name="other">Other</string>
-    <string name="refesh">Refesh</string>
+    <string name="user_name" tools:keep="@string/user_name">User name</string>
+    <string name="email" tools:keep="@string/email">Email</string>
+    <string name="list_book" tools:keep="@string/list_book">List Book</string>
+    <string name="bookmark" tools:keep="@string/bookmark">Bookmark</string>
+    <string name="favorite" tools:keep="@string/favorite">Favorite</string>
+    <string name="log_out" tools:keep="@string/log_out">Log Out</string>
+    <string name="other" tools:keep="@string/other">Other</string>
+    <string name="refesh" tools:keep="@string/refesh">Refesh</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="my_books">My books</string>
+    <string name="hello_blank_fragment" tools:keep="@string/hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_books" tools:keep="@string/my_books">My books</string>
     <string name="src">Src</string>
     <string name="title">Title</string>
+    <string name="todo">TODO</string>
+    <string name="search_hint">Search</string>
+    <string name="unknow_author">Unknow Author</string>
+    <string name="no_description_available">No description available</string>
 </resources>

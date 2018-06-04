@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context="duc.googlebook.MyBookActivity">
+    tools:context=".activity.mybook.MyBookActivity"
+    tools:keep="@layout/activity_my_book">
 
     <ListView
         android:id="@+id/lv_my"

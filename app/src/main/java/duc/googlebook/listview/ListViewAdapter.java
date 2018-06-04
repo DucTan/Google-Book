@@ -1,5 +1,6 @@
 package duc.googlebook.listview;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,9 +17,8 @@ import duc.googlebook.model.Book;
 
 public class ListViewAdapter extends BaseAdapter {
 
-    TextView title, src;
-    private ArrayList<Book> mArrData;
-    private Context mContext;
+    private final ArrayList<Book> mArrData;
+    private final Context mContext;
 
     public ListViewAdapter(Context context, ArrayList<Book> arrData) {
         mArrData = arrData;
@@ -43,12 +43,13 @@ public class ListViewAdapter extends BaseAdapter {
         return 0;
     }
 
+    @SuppressLint("ViewHolder")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
         convertView = inflater.inflate(R.layout.list_item_2, parent, false);
-        title = convertView.findViewById(R.id.item_title);
-        src = (TextView) convertView.findViewById(R.id.item_src);
+        TextView title = convertView.findViewById(R.id.item_title);
+        TextView src = convertView.findViewById(R.id.item_src);
         Book item = this.mArrData.get(position);
         title.setText(item.getTitle());
         src.setText(item.getTg());

@@ -3,14 +3,12 @@
     package="duc.googlebook">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@drawable/book"
@@ -19,23 +17,32 @@
         android:roundIcon="@drawable/book"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".activity.main.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
 
         <activity
-            android:name=".BookActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".activity.bookinfo.BookActivity"
+            android:parentActivityName=".activity.main.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.login.LoginActivity"
             android:theme="@style/AppTheme.Start">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,9 +70,15 @@
         </activity>
 
         <activity
-            android:name=".MyBookActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".activity.mybook.MyBookActivity"
+            android:label="MyBook"
+            android:parentActivityName=".activity.main.MainActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ViewMyBookActivity"
+            android:parentActivityName=".activity.mybook.MyBookActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
     </application>
 

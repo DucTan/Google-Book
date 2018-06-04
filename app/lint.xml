@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/book.png" />
+        <ignore path="src/main/res/drawable/bookmark.png" />
+        <ignore path="src/main/res/drawable/favorite.png" />
+        <ignore path="src/main/res/drawable/heart.png" />
+        <ignore path="src/main/res/drawable/list.png" />
+        <ignore path="src/main/res/drawable/login_background.jpg" />
+        <ignore path="src/main/res/drawable/logout.png" />
+        <ignore path="src/main/res/drawable/menu.png" />
+        <ignore path="src/main/res/drawable/mine.png" />
+        <ignore path="src/main/res/drawable/nav_header_main.jpg" />
+        <ignore path="src/main/res/drawable/pdf.png" />
+        <ignore path="src/main/res/drawable/slider1.jpg" />
+        <ignore path="src/main/res/drawable/slider2.jpg" />
+        <ignore path="src/main/res/drawable/slider3.jpg" />
+    </issue>
+    <issue id="UnusedResources">
+        <ignore path="src/main/res/drawable/favorite.png" />
+        <ignore path="src/main/res/drawable/favorite.png" />
+        <ignore path="src/main/res/drawable/login_background.jpg" />
+        <ignore path="src/main/res/drawable/logout.png" />
+        <ignore path="src/main/res/drawable/menu.png" />
+    </issue>
+</lint>

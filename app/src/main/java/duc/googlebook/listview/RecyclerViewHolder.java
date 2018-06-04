@@ -9,9 +9,11 @@ import duc.googlebook.R;
 
 public class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-    public TextView title, tg, content;
+    public final TextView title;
+    public final TextView tg;
+    public final TextView content;
 
-    public ImageView img;
+    public final ImageView img;
 
     public RecyclerViewHolder(View itemView) {
         super(itemView);

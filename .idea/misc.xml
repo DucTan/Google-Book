@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <pattern value="duc.googlebook.activity.bookinfo.BookActivity" />
+    <pattern value="duc.googlebook.activity.bookinfo.BookPresenter" />
+    <pattern value="duc.googlebook.ExampleInstrumentedTest" method="useAppContext" />
+    <pattern value="duc.googlebook.ExampleInstrumentedTest" />
+    <pattern value="duc.googlebook.ExampleUnitTest" method="addition_isCorrect" />
+    <pattern value="duc.googlebook.ExampleUnitTest" />
+    <pattern value="duc.googlebook.activity.login.LoginActivity" />
+    <pattern value="duc.googlebook.activity.login.LoginPresenter" />
+    <pattern value="duc.googlebook.activity.main.MainActivity" />
+    <pattern value="duc.googlebook.activity.main.MainPresenter" />
+    <pattern value="duc.googlebook.activity.mybook.MyBookActivity" />
+    <pattern value="duc.googlebook.activity.mybook.MyBookPresenter" />
+    <pattern value="duc.googlebook.activity.mybook.MyBookView" />
+    <pattern value="duc.googlebook.activity.ViewMyBookActivity" />
+  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />

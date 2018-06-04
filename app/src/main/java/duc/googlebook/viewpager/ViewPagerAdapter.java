@@ -14,9 +14,9 @@ import duc.googlebook.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
 
-    private Context context;
+    private final Context context;
 
-    private Integer[] images = {R.drawable.slider1, R.drawable.slider2, R.drawable.slider3};
+    private final Integer[] images = {R.drawable.slider1, R.drawable.slider2, R.drawable.slider3};
 
     public ViewPagerAdapter(Context context) {
         this.context = context;
@@ -36,6 +36,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, final int position) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        assert layoutInflater != null;
         @SuppressLint("InflateParams") View view = layoutInflater.inflate(R.layout.custom_layout, null);
         ImageView imageView = view.findViewById(R.id.imageView);
         imageView.setImageResource(images[position]);

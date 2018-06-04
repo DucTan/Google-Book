@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@layout/activity_login,@layout/activity_main,@layout/activity_book,@layout/activity_my_book"
+    tools:shrinkMode="strict" />

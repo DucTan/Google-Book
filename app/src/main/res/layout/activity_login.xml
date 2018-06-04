@@ -8,7 +8,9 @@
     android:background="@drawable/login_background"
     android:orientation="vertical"
     android:weightSum="20"
-    tools:context="duc.googlebook.LoginActivity">
+    tools:context=".activity.login.LoginActivity"
+    tools:ignore="Overdraw"
+    tools:keep="@layout/activity_login">
 
     <RelativeLayout
         android:id="@+id/rel1"
